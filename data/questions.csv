@@ -1,11 +1,11 @@
 id,type,question,option_a,option_b,option_c,option_d,correct_answer
-1,mcq,If you receive an email from your bank asking you to confirm your login details by clicking on a link. What is the safest action?,Click the link and check whether the website looks genuine,Reply to the email asking whether it's real,Report to IT and do not click the link,Forward it to a colleague for a second opinion,c
-2,mcq,Which approach to workplace passwords is the strongest?,One strong password reused across all systems,Unique passphrase for each system stored in an approved password manager,Short password changed every week,Your usual password with the current year added to the end,b
+1,mcq,If you got an email from your bank asking you to confirm your login details by clicking on a link. What is the safest thing to do?,Click the link and check whether the website looks genuine,Reply to the email asking whether it's real,Report to IT and do not click the link,Forward it to a colleague for a second opinion,c
+2,mcq,What type of approach to workplace passwords is the strongest?,One strong password reused across all systems,Unique passphrase for each system stored in an approved password manager,Short password changed every week,Your usual password with the current year added to the end,b
 3,mcq,You find an random USB stick in the office car park. What should you do?,Plug it into your work laptop to find the owner,Plug it into a personal device to see the content,Hand it to IT without plugging it in anywhere,Leave it where you found it,c
-4,mcq,A caller claims to be from IT and needs your password to fix an urgent issue you are not aware about. What should you do?,Give the password because IT has access anyway,Refuse and verify the request through a known internal contact,Give part of the password to confirm their identity,Ask them to email the request and then reply with it,b
+4,mcq,Someone is caling and claims to be from IT and needs your password to fix an urgent issue you are not aware about. What should you do?,Give the password because IT has access anyway,Refuse and verify the request through a known internal contact,Give part of the password to confirm their identity,Ask them to email the request and then reply with it,b
 5,mcq,What does multi-factor authentication add to a login?,Longer minimum password length,Second separate proof of identity such as a code from an app,Automatic monthly password changes,Encryption of the network connection,b
 6,tf,Public Wi-Fi in a cafe is safe for accessing company systems as long as the network has a password.,True,False,,,b
 7,tf,Suspected data breach should be reported internally straight away even if you are not sure how serious it is.,True,False,,,a
 8,tf,Locking your screen when you leave your desk is only necessary when visitors are in the building.,True,False,,,b
 9,tf,Attachments are always safe to open if the email came from someone you know.,True,False,,,b
-10,tf,A lost or stolen work phone must be reported even if it was password protected.,True,False,,,a
+10,tf,Should you report a lost or stolen work device even if it is password protected.,True,False,,,a
