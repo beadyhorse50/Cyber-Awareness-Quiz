@@ -5,6 +5,7 @@ import streamlit as st
 from pcode.quiz import Quiz
 from pcode.quiz_data import QuizData
 from pcode.validation import validate_name, calculate_percentage
+from pcode.admin import login_screen, dashboard
 
 QUESTIONS_FILE = "data/questions.csv"
 RESULTS_FILE = "data/results.csv"
@@ -34,6 +35,10 @@ def start_screen():
         else:
             st.error(message)
 
+
+    if st.button("Admin Portal"):
+        st.session_state.page = "admin"
+        st.rerun()
 
 def quiz_screen():
     """Only show one question at a time"""
@@ -115,6 +120,23 @@ def results_screen():
         st.rerun()
 
 
+def admin_screen():
+    """Show admin logon page"""
+
+    if st.session_state.get("admin_logged_in", False):
+        data = QuizData(
+            QUESTIONS_FILE,
+            RESULTS_FILE
+        )
+
+        dashboard(data.load_attempts())
+    else:
+        login_screen()
+
+    if st.button("Back to Quiz"):
+        st.session_state.page = "start"
+        st.rerun()
+
 if "page" not in st.session_state:
     st.session_state.page = "start"
 
@@ -122,5 +144,7 @@ if st.session_state.page == "start":
     start_screen()
 elif st.session_state.page == "quiz":
     quiz_screen()
+elif st.session_state.page == "admin":
+    admin_screen() 
 else:
     results_screen()
