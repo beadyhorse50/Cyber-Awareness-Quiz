@@ -341,3 +341,21 @@ pytest -v
 | `data/results.csv` | Saved attempts that are created automatically and saved|
 | `tests/test_validation.py` | Unit tests |
 | `docs/` | Wireframes, screenshots, requirements text|
+
+## Evaluation
+
+### What went well
+
+**Designing before my code**
+I was able to build the wireframes long before beginning the code so I could map what types of screens were needed and what I wanted the user path to look like which made the process simpler compared to if there was no plan in place. This saved me alot of time as it meant I did not need to go back on my code and keep making changes.
+
+**Questions stored in a CSV.**
+Storing the question set within an accesible CSV file meant it is not touching any code to change it. This is important as it means that anyone that want to use this app can make changes within Autotech. It means this app can be used for more than just cyber security and cyber awareness month. 
+
+### What could have been improved
+
+**No continuous integration.**
+No continuous integration was implemented because of the size of the project, it is quite small and developed by one person, testing was carried out manually and automated with the use of pytest. If further development was to be planned, I would aim to implement continous integration as the first change.
+
+**Storage does not survive deployment.**
+The deployed version of the app works to store results in local files but Streamlit these files when the app restarts.Essentially any saved data from quiz results can be lost. For real world use a database would be much more suitable to store all the needed data. IF I want to use this next month it meas the results may need to be exported often so I don't lose any.
