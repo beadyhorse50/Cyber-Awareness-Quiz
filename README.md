@@ -17,16 +17,20 @@ I have chosen to build this product rather than buy was to allow us full control
 
 ### GUI Design
 
-[Six wireframe images, plus your Figma link]
+I created the wireframes with Figma before code was made, this was done so I could plan each screen and how I wanted the user journey to go
 
-### Functional and Non-functional Requirements
+![Name entry screen](docs/wireframes/01-name-entry.png)
 
-[The two tables from docs/requirements.md, pasted in]
+![Question screen](docs/wireframes/02-question-entry.png)
 
-### Tech Stack
+![Results screen](docs/wireframes/03-results.png)
 
-[A table]
+![Admin login](docs/wireframes/04-admin-login.png)
 
-### Code Design
+![Admin dashboard](docs/wireframes/05-admin-board.png)
 
-[Your Mermaid class diagram from docs/c-design.md, pasted in]
+![Planned user journey](docs/wireframes/06-user-journey.png)
+
+[View the Figma file](https://www.figma.com/design/L7wmKdgztnuQE3VExHbvkR/Untitled?node-id=0-1&t=bi7yH0zIUxEu95DG-1)
+
+
