@@ -261,8 +261,80 @@ Ensure the score is calculated correctly | Answer all 10 counting how many were 
 Results are saved to CSV | Complete the quiz then open data/results.csv | New row with name, score, total and date |Pass|
 Wrong admin credentials are rejected | Entered the wrong admin password on purpose | "Incorrect password" error and left with no access to results |Pass|
 
+![Validation error](docs/screenshots/11-validation-error.png)
+
+![Name error](docs/screenshots/12-name-error.png)
+
+![Incorrect admin password](docs/screenshots/15-admin-incorrect.png)
+
+![Attempt saved to CSV](docs/screenshots/14-results-csv.png)
+
 ### Unit test outcomes
 
 All 14 pytests were ran using this `pytest -v`.
 
-![Unit tests passing](docs/screenshots/08-tests-passing.png)
+![Unit tests passing](docs/screenshots/08-pass-test.png)
+
+
+## User documentation
+
+This section explains how employees at Autotech are going to use the app
+
+**Taking the quiz**
+
+1. Open the link: https://cyber-awareness-quiz-sxt4fcxudusgmzgkeutgcn.streamlit.app/
+2. Type your name in and start the quiz.
+3. Select one answer per question displayed then click next.
+4. Repeat for all questions. You cannot continue without selecting a valid answer.
+5. Your score appears at the end and comes with  any questions you answered wrong and the correct answers to them too.
+6. There is no limit on attampts so you can try again at any point in time
+
+![Start screen](docs/screenshots/09-home-screen.png)
+
+![Question screen](docs/screenshots/10-questions.png)
+
+![Results screen](docs/screenshots/13-incorrect-answers.png)
+
+** How to view results on the admin daashbaord/portal**
+
+1. Click the admin portal button on the start screen
+2. Enter the correct admin password and press login
+3. The dashboard shows the total number of attempts made and the relevant records of each attempt made
+4. Click Back to Quiz to leave the admin dashboard page
+
+**Making changes to questions**
+
+The questions live in questions.csv you can easily change whatever question you want while also changing which option is the correct one too
+
+### Technical documentation
+
+**Running the app locally**
+
+git clone https://github.com/beadyhorse50/Cyber-Awareness-Quiz.git
+cd Cyber-Awareness-Quiz
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+streamlit run app.py
+
+**Running unit tests with pytest**
+
+pytest -v
+
+
+**Setting the admin password**
+
+[Your explanation, about 70 words: generate a hash by running the hash_password function, put it in .streamlit/secrets.toml as ADMIN_PASSWORD_HASH, that file is gitignored so it is never committed, and for the deployed version the same value goes in the Secrets box in the Streamlit Cloud settings]
+
+**Sturucture for the Project**
+
+| `app.py` |This has the Streamlit interface|
+| `pcode/questions.py` | The Questions |
+| `pcode/quiz.py` | The Quiz scoring and wrong asnwers |
+| `pcode/quiz_data.py` | The quiz data and csv reading|
+| `pcode/validation.py` |Validation of functions |
+| `pcode/admin.py` | Admin dashboard/portal login|
+| `data/questions.csv` | The ten questions |
+| `data/results.csv` | Saved attempts that are created automatically and saved|
+| `tests/test_validation.py` | Unit tests |
+| `docs/` | Wireframes, screenshots, requirements text|
