@@ -2,7 +2,7 @@
 
 Testing was completed on a wWindows 11 device and I used Python 3.14.4, and deployed on Stramlit Cloud version.
 
- Valid name accepted | I entered a normal name, clicked start quiz| Quiz starts at question 1 |Pass |
+ Valid name gets accepted | I entered a normal name, clicked start quiz| Quiz starts at question 1 |Pass |
 Not entering any values for the name | Left the box blank press click Start Quiz | Error shows and quiz does not start |Pass|
 A name that has digits does not work | Enter "Todi2" and click Start Quiz | Error about numbers in name |Pass |
 You have to pick an answer before continuing | Clicked next without selecting an option | Error shows and stays on same question |Pass |
