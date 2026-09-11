@@ -301,6 +301,7 @@ This section explains how employees at Autotech are going to use the app
 2. Enter the correct admin password and press login
 3. The dashboard shows the total number of attempts made and the relevant records of each attempt made
 4. Click Back to Quiz to leave the admin dashboard page
+![Admin dashboard](docs/screenshots/16-admin-correct.png)
 
 **Making changes to questions**
 
@@ -316,6 +317,8 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
+
+![Deployed on Streamlit Community Cloud](docs/screenshots/17-streamlit-cloud.png)
 
 **Running unit tests with pytest**
 
